@@ -19,3 +19,9 @@ A working example of building a simple web application with a LAMP stack. Users 
 # Finished Project
 - Site: https://dahamancop4331.xyz/
 - Youtube link to demonstration: https://youtu.be/2NQeJTeGYC4
+
+# AI Use
+- **Tool(s)**: ChatGPT 5.2
+- **Date(s)**: 1/25/26
+- **Scope**: Automating any change to the main branch of the GitHub repo to be pushed to the server too
+- **Nature of use**: ChatGPT was used to generate the code for GitHub's Actions workflow file (deploy.yml). It created a YML file with the appropriate fields filled out.
