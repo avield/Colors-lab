@@ -7,7 +7,7 @@ A working example of building a simple web application with a LAMP stack. Users 
 - Create and deploy LAMP Droplet on Digital Ocean
 - Synchronize github account with LAMP server so all updates to github are deployed to the server automatically
     - This means html files are left in the root directory as the root mirrors /var/www/html on the server
-    - workflows directory with a yml file
+    - Create a workflows directory with a yml file
 - Set up MySQL Database according to ERD (found in Documentations folder)
 - Create Back End:
     - API end points using PHP (LAMPAPI folder)
