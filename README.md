@@ -39,3 +39,20 @@ purchased for this site.
 # Finished Project
 - Site: https://dahamancop4331.xyz/
 - Youtube link to demonstration: https://youtu.be/2NQeJTeGYC4
+
+## AI Assistance Disclosure
+
+The UML models in the documents folder were developed with assistance from generative AI tools:
+
+- **Tool**: ChatGPT (OpenAI, GPT-5.3), accessed via www.chatgpt.com  
+- **Dates**: March 2026  
+- **Scope**:  
+  - Guidance on UML modeling concepts for the COLORS web application  
+  - Assistance translating ERD concepts into Use Case, Activity, and Class diagrams  
+  - Help converting diagram descriptions into PlantUML syntax  
+- **Nature of Use**:    
+  - Generated initial diagram structures and PlantUML templates  
+  - Suggested conceptual modeling approaches based on assignment requirements  
+  - All diagrams and descriptions were reviewed, modified, and validated to reflect my understanding of the system design  
+
+All AI-generated material was critically evaluated and adapted to meet the assignment’s requirements. The final diagrams and submission represent my own understanding of the COLORS application architecture and data model.
