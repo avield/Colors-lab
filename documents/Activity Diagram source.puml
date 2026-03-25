@@ -1,0 +1,32 @@
+@startuml
+start
+
+:Open login page;
+:Enter username and password;
+:Hash password;
+:Send POST request to Login.php;
+
+if (Login successful?) then (yes)
+  :Save cookie;
+  :Open color page;
+
+  if (User wants to search?) then (yes)
+    :Enter color name;
+    :Send request to SearchColors.php;
+    :Show search results;
+  else (no)
+    :Enter new color;
+    :Send request to AddColor.php;
+    :Show confirmation;
+  endif
+
+  :Log out;
+  :Clear cookie;
+  :Return to login page;
+  stop
+else (no)
+  :Show error message;
+  stop
+endif
+
+@enduml
