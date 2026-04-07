@@ -1,6 +1,9 @@
 module.exports = [
   {
-    files: ["**/*.js"],
+    ignores: ["node_modules/**"]
+  },
+  {
+    files: ["public/js/code.js"],
     languageOptions: {
       ecmaVersion: 2021,
       sourceType: "script",
@@ -8,13 +11,28 @@ module.exports = [
         window: "readonly",
         document: "readonly",
         console: "readonly",
-        fetch: "readonly",
-        alert: "readonly"
+        alert: "readonly",
+        XMLHttpRequest: "readonly",
+        md5: "readonly"
       }
     },
     rules: {
-      "no-unused-vars": "warn",
-      "no-undef": "error"
+      "no-undef": "error",
+      "no-unused-vars": "off"
+    }
+  },
+  {
+    files: ["public/js/md5.js"],
+    languageOptions: {
+      ecmaVersion: 2021,
+      sourceType: "script",
+      globals: {
+        module: "readonly"
+      }
+    },
+    rules: {
+      "no-undef": "error",
+      "no-unused-vars": "off"
     }
   }
 ];

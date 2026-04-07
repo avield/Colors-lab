@@ -4,7 +4,7 @@
   "description": "A working example of building a simple web application with a LAMP stack. Users can log in to a site and add or search for colors on a MySQL database.",
   "main": "index.js",
   "scripts": {
-    "lint:js": "eslint \"**/*.js\"",
+    "lint:js": "eslint \"public/js/**/*.js\"",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:html": "htmlhint \"**/*.html\"",
     "lint": "npm run lint:js && npm run lint:css && npm run lint:html"
