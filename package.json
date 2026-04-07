@@ -1,0 +1,30 @@
+{
+  "name": "colors-lab",
+  "version": "1.0.0",
+  "description": "A working example of building a simple web application with a LAMP stack. Users can log in to a site and add or search for colors on a MySQL database.",
+  "main": "index.js",
+  "scripts": {
+    "lint:js": "eslint \"**/*.js\"",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:html": "htmlhint \"**/*.html\"",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avield/Colors-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/avield/Colors-lab/issues"
+  },
+  "homepage": "https://github.com/avield/Colors-lab#readme",
+  "devDependencies": {
+    "eslint": "^10.2.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
