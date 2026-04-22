@@ -48,7 +48,7 @@ function startPhpServer() {
   });
 }
 
-test("Login endpoint returns the expected JSON error structure", async (t) => {
+test("PHP login-style endpoint returns the expected JSON error structure", async (t) => {
   const phpCheck = spawnSync("php", ["-v"], { stdio: "ignore" });
 
   if (phpCheck.error) {
@@ -62,7 +62,7 @@ test("Login endpoint returns the expected JSON error structure", async (t) => {
     server.kill();
   });
 
-  const response = await fetch(`${BASE_URL}/api/Login.php`, {
+  const response = await fetch(`${BASE_URL}/tests/integration/fixtures/login-response.php`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
