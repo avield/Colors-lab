@@ -1,18 +1,16 @@
-name: Lint Colors App
+name: Colors App CI
 
 on:
   push:
-    branches: [ "Automated-Linting" ]
   pull_request:
-    branches: [ "Automated-Linting" ]
 
 jobs:
-  lint:
+  quality:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [24.x] 
+        node-version: [24.x]
 
     steps:
       - uses: actions/checkout@v4
@@ -24,7 +22,18 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
 
       - name: Run all linters
         run: npm run lint
+
+      - name: Run unit tests
+        run: npm run test:unit
+
+      - name: Run integration tests
+        run: npm run test:integration
